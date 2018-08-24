@@ -1,3 +1,9 @@
+/*
+Programa hecho para imprimir un cuadrado rodeado de numeros por input
+Daniel Roa
+A01021960
+23 de agosto del 2018
+*/
 import java.util.*;
 
 public class Asesoria{
