@@ -37,7 +37,10 @@ public class Piramide{
     if (n == 1) {
       return n;
     }else;
-    return n + fondo(n-1);
+
+    //return fondo(n-1);
+
+    System.out.println(fondo(n));
 
   }
 }
