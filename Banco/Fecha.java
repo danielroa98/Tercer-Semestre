@@ -19,5 +19,16 @@ public class Fecha{
     System.out.println(dia + "/"+mes+"/"+anio);
   }
 
+  public int getDia(){
+    return dia;
+  }
+
+  public int getMes(){
+    return mes;
+  }
+
+  public int getAnio(){
+    return anio;
+  }
 
 }
