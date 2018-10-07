@@ -11,11 +11,12 @@ public class PlanetMain{
 
       for (Planet p: Planet.values()) {
         System.out.printf("Tu peso en el planeta %s es %f\n", p, p.Peso(masa));
+
       }
 
-      for (int i = 0; i < 10; i++) {
+      /*for (int i = 0; i < 10; i++) {
         System.out.printf("Tu peso en el planeta %s es %f\n", Planet.MERCURIO, Planet.MERCURIO.Peso(masa));
-      }
+      }*/
 
     }
 }
