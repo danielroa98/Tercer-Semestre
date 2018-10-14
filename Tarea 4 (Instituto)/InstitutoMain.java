@@ -48,15 +48,17 @@ public class InstitutoMain{
 
     /*********Lista predeterminada*************/
 
-    Alumnos a1 = new Alumnos("Luis Daniel", "Roa", "Gonzalez");
-
-    Alumnos a2 = new Alumnos("Christian Alberto", "Dalma", "Schulz");
-
-    Alumnos a3 = new Alumnos("Luis Armando", "Ortiz", "Revilla");
+    Alumnos a5 = new Alumnos("Christian Alberto", "Dalma", "Schulz");
+    Alumnos a4 = new Alumnos("Luis Armando", "Ortiz", "Revilla");
+    Alumnos a3 = new Alumnos("Luis Daniel", "Roa", "Gonzalez");
+    Alumnos a2 = new Alumnos("Miriam", "Perez", "de Haro");
+    Alumnos a1 = new Alumnos("Rodrigo", "Roa", "Gonzalez");
 
     grupo.add(0, a1);
     grupo.add(0, a2);
     grupo.add(0, a3);
+    grupo.add(0, a4);
+    grupo.add(0, a5);
 
     /***********Inician las instrucciones de cada menu********/
 
@@ -64,16 +66,19 @@ public class InstitutoMain{
     /*******************AGREGA CANDIDATOS NUEVOS************/
     if (opcion == 1) { //agrega candidatos
 
-      System.out.println("Cuantos alumnos desea añadir?");
-      students = lecturaI.nextInt();
+      System.out.println("Cuál es el nombre del alumno?");
+      nombres = lecturaS.nextLine();
 
+      System.out.println("\nCuál es su apellido paterno?");
+      apellidop = lecturaS.nextLine();
 
-      for (int cont = 0; cont <= students; cont++) {
+      System.out.println("\nCuál es su apellido materno?");
+      apellidom = lecturaS.nextLine();
 
-        System.out.println("");
+      Alumnos a6 = new Alumnos(nombres, apellidop, apellidom);
 
-        grupo.add(0, a1);
-      } //for usado para añadir la cantidad deseada de alumnos al sistema
+        grupo.add(0, a6);
+
 
       System.out.println("\nLa lista actualizada es la siguiente: ");
 
@@ -126,6 +131,7 @@ public class InstitutoMain{
       System.out.println("\n Adios");
     } //CICLO IF EN CASO QUE EL USUARIO INSERTE UN VALOR INEXISTENTE
 
+    System.out.println("\n Gracias por usar el sistema!");
 
   }
 }
