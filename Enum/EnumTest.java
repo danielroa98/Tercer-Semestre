@@ -15,7 +15,7 @@ public class EnumTest{
   public void tellItLikeItIs(){
     switch(day){
       case MONDAY:
-        System.out.println("Mondays suck cock.");
+        System.out.println("Mondays suck.");
         break;
 
       case FRIDAY:
