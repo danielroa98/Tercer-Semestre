@@ -11,20 +11,19 @@ public class TarjetaMain{
   public static void main(String[] args) {
 
     Scanner lectura = new Scanner(System.in);
-
-    String tarjeta;
+    Scanner lecturaInt = new Scanner(System.in);
 
     /*******Datos Tarjetahabiente****/
 
-    int saldo = 5000;
+    String tarjeta;
+    int saldo;
 
     /******Fechas*****/
 
-    int dia = 7;
-    String mes = "octubre";
-    int anio = 2018;
+    int dia;
+    String mes;
+    int anio;
 
-    int yr = anio + 5;
     /*******Tipo de Tarjeta*******/
     System.out.println("Inserte el tipo de tarjeta: ");
     tarjeta = lectura.nextLine();
@@ -47,7 +46,29 @@ public class TarjetaMain{
       System.out.println("Usted debe tener unos ingresos minimos de $100,000\n Y una anualidad de $4,599");
     }
 
-    TarjetaCredito t1 = new TarjetaCredito(tarjeta, saldo, dia, mes, anio, yr);
+    System.out.println(" ");
+
+    System.out.println("Cuál es el saldo actual de la tarjeta?");
+    saldo = lecturaInt.nextInt();
+
+    System.out.println();
+
+    System.out.println("Escriba la fecha a continuación, por favor, que el mes no este escrito de manera numerica");
+
+    System.out.print("Dia: ");
+    dia = lecturaInt.nextInt();
+    System.out.print("Mes: ");
+    mes = lectura.nextLine();
+    System.out.print("Año: ");
+    anio = lecturaInt.nextInt();
+
+    int diaC = dia;
+
+    String mesC = mes;
+
+    int yr = anio + 5;
+
+    TarjetaCredito t1 = new TarjetaCredito(tarjeta, saldo, dia, mes, anio, diaC, mesC, yr);
 
     t1.printTarjetaCredito();
   }

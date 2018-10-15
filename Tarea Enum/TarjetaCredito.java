@@ -8,7 +8,7 @@ A01021960
 public class TarjetaCredito{
 
   //Tipo de tarjeta
-  private String tC;
+  private String tarjetaC;
 
   private int numero;
 
@@ -20,16 +20,17 @@ public class TarjetaCredito{
 
   private Fecha fCaducidad;
 
-  public TarjetaCredito(String tC, int saldo,int dia, String mes, int anio, int yr){
+  public TarjetaCredito(String tarjetaC, int saldo,int dia, String mes, int anio, int diaC, String mesC, int yr){
     noTarjeta++;
     this.numero = noTarjeta;
-    this.tC = tC;
+    this.tarjetaC = tarjetaC;
     this.saldo = saldo;
-    this.fExpedicion = new Fecha(dia, mes, anio, yr);
+    this.fExpedicion = new Fecha(dia, mes, anio, diaC, mesC, yr);
+    //this.fExpiracion = new Fecha(dia, mes, yr);
   }
 
   public void printTarjetaCredito(){
-    System.out.printf("Tipo de tarjeta: %s\nNumero de tarjeta: %d\nSaldo actual: %d\n", tC, numero, saldo);
+    System.out.printf("Tipo de tarjeta: %s\nNumero de tarjeta: %d\nSaldo actual: %d\n", tarjetaC, numero, saldo);
 
     System.out.print("Fecha de expedicion: ");fExpedicion.printFechaExp();
 
