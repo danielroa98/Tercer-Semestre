@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class TareaArrayListVF{
+public class Main{
 
   public static void main(String[] args) {
     int max = 0;

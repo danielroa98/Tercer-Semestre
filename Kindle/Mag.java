@@ -1,39 +1,46 @@
-public class Mag extends Archives{
+/*
+ *Daniel Roa
+ *A01021960
+ *Tarea Kindle
+ *28 de octubre del 2018
+ */
 
-  public Mag(String titulo, String autor, String publica,int dia, String mes, int anio){
-    super(titulo, autor, publica,dia, mes, anio);
-  }
-  
-  public String getTitulo(){
-    return titulo;
-  }
+public class Mag extends Archives {
 
-  public String getAutor(){
-    return autor;
-  }
+ public Mag(String titulo, String autor, String publica, int dia, String mes, int anio) {
+  super(titulo, autor, publica, dia, mes, anio);
+ }
 
-  public String getPublica(){
-    return publica;
-  }
+ public String getTitulo() {
+  return titulo;
+ }
 
-  public int getDia(){
-    return dia;
-  }
+ public String getAutor() {
+  return autor;
+ }
 
-  public String getMes(){
-    return mes;
-  }
+ public String getPublica() {
+  return publica;
+ }
 
-  public int getAnio(){
-    return anio;
-  }
+ public int getDia() {
+  return dia;
+ }
 
-  public void printMag(){
+ public String getMes() {
+  return mes;
+ }
 
-    System.out.println("El libro "+titulo+" escrito por "+autor+" publicado por: "+publica+".");
+ public int getAnio() {
+  return anio;
+ }
 
-    System.out.println("Fue publicado en "+dia+"/"+mes+"/"+anio);
+ public void printMag() {
 
-  }
+  System.out.println("El libro " + titulo + " escrito por " + autor + " publicado por: " + publica + ".");
+
+  System.out.println("Fue publicado en " + dia + "/" + mes + "/" + anio);
+
+ }
 
 }

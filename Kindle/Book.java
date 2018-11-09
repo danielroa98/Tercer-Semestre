@@ -1,38 +1,44 @@
-public class Book extends Archives{
+/*
+ *Daniel Roa
+ *A01021960
+ *Tarea Kindle
+ *28 de octubre del 2018
+ */
 
-   public Book(String titulo, String autor, int pag, int dia, String mes, int anio){
-     super(titulo, autor, pag, dia, mes, anio);
-  }
+public class Book extends Archives {
 
-  public String getTitulo(){
-    return titulo;
-  }
+ public Book(String titulo, String autor, int pag, int dia, String mes, int anio) {
+  super(titulo, autor, pag, dia, mes, anio);
+ }
 
-  public String getAutor(){
-    return autor;
-  }
+ public static String getTitulo() {
+  return titulo;
+ }
 
-  public int getPag(){
-    return pag;
-  }
+ public static String getAutor() {
+  return autor;
+ }
 
-  public int getDia(){
-    return dia;
-  }
+ public static int getPag() {
+  return pag;
+ }
 
-  public String getMes(){
-    return mes;
-  }
+ public static int getDia() {
+  return dia;
+ }
 
-  public int getAnio(){
-    return anio;
-  }
+ public static String getMes() {
+  return mes;
+ }
 
-  public void printBook(){
+ public int getAnio() {
+  return anio;
+ }
 
-    System.out.println("El libro "+titulo+" escrito por "+autor+" con páginas "+pag+".");
+ public static printBookDatos(String titulo, String autor, int pag, int dia, String mes, int anio) {
 
-    System.out.println("Fue publicado en "+dia+"/"+mes+"/"+anio);
+  System.out.println("\nEl titulo del libro es: "+titulo+"\nEl autor es: "+autor+"\nTiene "+pag+" paginas.\n\nFue publicado el "+dia+"/"+mes+"/"+anio);
 
-  }
+ }
+
 }

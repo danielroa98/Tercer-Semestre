@@ -1,58 +1,42 @@
-public class Archives{
+/*
+ *Daniel Roa
+ *A01021960
+ *Tarea Kindle
+ *28 de octubre del 2018
+ */
 
-/*****Datos generales******/
-  protected String titulo;
-  protected String autor;
+public class Archives {
 
-/*****Dato libro*****/
-  protected int pag;
+ /*****Datos generales******/
+ protected String titulo;
+ protected String autor;
 
-/**********Datos libro y revista************/
-  protected int dia;
-  protected String mes;
-  protected int anio;
+ /*****Dato libro*****/
+ protected int pag;
 
-  protected String publica;
+ /**********Datos libro y revista************/
+ protected int dia;
+ protected String mes;
+ protected int anio;
 
-  public Archives(String titulo, String autor, int pag, int dia, String mes, int anio){
-    this.titulo = titulo;
-    this.autor = autor;
-    this.pag = pag;
-    this.dia = dia;
-    this.mes = mes;
-    this.anio = anio;
-  }
+ protected String publica;
 
-  public Archives(String titulo, String autor, String publica, int dia, String mes, int anio){
-    this.titulo = titulo;
-    this.autor = autor;
-    this.publica = publica;
-    this.dia = dia;
-    this.mes = mes;
-    this.anio = anio;
-  }
+ public Archives(String titulo, String autor, int pag, int dia, String mes, int anio) {
+  this.titulo = titulo;
+  this.autor = autor;
+  this.pag = pag;
+  this.dia = dia;
+  this.mes = mes;
+  this.anio = anio;
+ }
 
-  public String getTitulo(){
-    return titulo;
-  }
+ public Archives(String titulo, String autor, String publica, int dia, String mes, int anio) {
+  this.titulo = titulo;
+  this.autor = autor;
+  this.publica = publica;
+  this.dia = dia;
+  this.mes = mes;
+  this.anio = anio;
+ }
 
-  public String getAutor(){
-    return autor;
-  }
-
-  public int getPag(){
-    return pag;
-  }
-
-  public int getDia(){
-    return dia;
-  }
-
-  public String getMes(){
-    return mes;
-  }
-
-  public int getAnio(){
-    return anio;
-  }
 }
